@@ -119,7 +119,7 @@ article {
 article p {
     text-align: justify;
     line-height: 2em;
-    margin: 20px;
+    margin: 20px 0;
     text-indent: 50px;
 }
 
