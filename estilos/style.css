@@ -1,0 +1,209 @@
+/* Configurações padrões dos CSS */
+@charset "UTF-8";
+
+/* Sessão das minhas fontes */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@font-face {
+    font-family: 'Beatles';
+    src: url('../fontes/Beatles.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* Sessão das minhas variáveis */
+:root {
+    --font-dest: 'Beatles';
+    --font-tit: 'Pacifico', cursive;
+    --font-para: Verdana, Geneva, Tahoma, sans-serif;
+    --font-nav: Arial, Helvetica, sans-serif;
+
+    --vermelho: #ac0000;
+    --amarelo: #ffd900;
+    --laranja: #ffa500;
+    --cinza: #dadada;
+}
+
+/* Configurações gerais */
+
+body {
+    background-color: var(--cinza);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a.externo {
+    background-color: var(--cinza);
+    padding: 2px;
+    text-decoration: none;
+    color: var(--vermelho);
+    font-weight: bolder;
+}
+
+a.externo:hover {
+    text-decoration: underline;
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+/* Estilizando o Header */
+
+header {
+    background-image: linear-gradient(to top, var(--vermelho), var(--amarelo));
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+}
+
+header h1 {
+    font-size: 5em;
+    font-family: var(--font-dest);
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+
+header h2 {
+    font-size: 1em;
+    font-style: italic;
+    font-family: var(--font-para);
+    font-weight: lighter;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 10px;
+}
+
+/* Estilizando o Nav */
+
+nav {
+    background-color: var(--vermelho);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.301);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--font-nav);
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--laranja);
+    border-radius: 5px;
+}
+
+/* Estilizando o Main */
+
+main {
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 70px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Estilizando o Article */
+
+article {
+    font-family: var(--font-para);
+}
+
+article p {
+    text-align: justify;
+    line-height: 2em;
+    margin: 20px;
+    text-indent: 50px;
+}
+
+article h2, h3 {
+    background-image: linear-gradient(to right, var(--vermelho), transparent);
+    margin: 20px 0 20px 0;
+    padding-left: 5px;
+    font-family: var(--font-tit);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+article img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto 20px auto;
+}
+
+article iframe {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 20px auto;
+}
+
+article ul {
+    list-style-position: inside;
+    columns: 2;
+    padding: 0 30px 0 30px;
+    line-height: 2em;
+}
+
+article ul li {
+    list-style-type: '\1F4BF';
+}
+
+/* Estilizando o Aside */
+
+aside {
+    background-color: var(--laranja);
+    font-family: var(--font-para);
+    list-style-position: inside;
+    border-radius: 10px;
+    border: 2px dashed black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.534);
+}
+
+aside h1 {
+    font-family: var(--font-tit);
+    background-color: var(--vermelho);
+    border-radius: 10px 10px 0 0;
+    padding: 5px 0 5px 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+aside h1::after {
+    content: '\00A0\00A0\1F914';
+}
+
+aside ol {
+    line-height: 2em;
+    margin: 20px;
+}
+
+aside ol li {
+    list-style-type: '\2753\00A0\00A0';
+}
+
+/* Estilizando o Footer */
+
+footer {
+    background-color: var(--vermelho);
+    text-align: center;
+    padding: 30px;
+    font-family: var(--font-para);
+    font-style: italic;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
