@@ -18,8 +18,9 @@
     --font-nav: Arial, Helvetica, sans-serif;
 
     --vermelho: #ac0000;
+    --vermelho-escuro: #850000;
     --amarelo: #ffd900;
-    --laranja: #ffa500;
+    --laranja: #ffd27d;
     --cinza: #dadada;
 }
 
@@ -78,7 +79,7 @@ header h2 {
 /* Estilizando o Nav */
 
 nav {
-    background-color: var(--vermelho);
+    background-color: var(--vermelho-escuro);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.301);
 }
@@ -91,11 +92,13 @@ nav a {
     color: white;
     font-weight: bolder;
     transition: 0.5s;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.250);
 }
 
 nav a:hover {
     background-color: var(--laranja);
     border-radius: 5px;
+    color: var(--vermelho);
 }
 
 /* Estilizando o Main */
@@ -105,6 +108,7 @@ main {
     background-color: white;
     margin: auto;
     padding: 20px;
+    padding-bottom: 50px;
     margin-bottom: 70px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
     border-radius: 0px 0px 10px 10px;
@@ -130,6 +134,10 @@ article h2, h3 {
     font-family: var(--font-tit);
     color: white;
     text-shadow: 1px 1px 2px black;
+}
+
+article h2#primeiro_tit {
+    margin-top: 0;
 }
 
 article img {
